@@ -1,0 +1,28 @@
+.dashboard-chat {
+  display: grid;
+  grid-template-columns: 300px 1fr 200px;
+  grid-template-rows: 50px 1fr 50px;
+  height: 100vh;
+  padding: 20px;
+  grid-template-areas: "title title logout"
+                  "roomList messageList userList"
+                  "roomList messageForm userList";
+  .room-list {
+    grid-area: roomList;
+  }
+  h1 {
+    grid-area: title;
+  }
+  .logout {
+    grid-area: logout;
+  }
+  .message-list {
+    grid-area: messageList;
+  }
+  .user-list {
+    grid-area: userList;
+  }
+  .message-form {
+    grid-area: messageForm;
+  }
+}

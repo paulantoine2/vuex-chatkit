@@ -1,0 +1,24 @@
+.login {
+  padding: 40px;
+}
+.login-form {
+  
+  margin: 40px 0;
+  width: 100%;
+  max-width: 400px;
+  form {
+    position: relative;
+  }
+  h4 {
+    margin-bottom: 20px;
+    color: $dark;
+  }
+  .error {
+    color: red;
+  }
+  .info, .error {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}

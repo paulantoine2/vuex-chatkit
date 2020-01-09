@@ -1,0 +1,38 @@
+.room-list {
+  padding: 16px;
+}
+.room {
+  background-color: $white;
+  border-radius: 4px;
+  padding: 16px;
+  @include shadowLarge;
+  font-weight: 600;
+  color: $dark;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: all .2s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+  span {
+    background-color: $main;
+    color: $white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+  &.active {
+    transform: scale(1.05);
+    background-color: $blue;
+    color: $white;
+    span {
+      background-color: $white;
+      color: $blue;
+    }
+  }
+}

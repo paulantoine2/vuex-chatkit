@@ -1,0 +1,41 @@
+.message-list {
+  padding: 16px;
+  .messages {
+    overflow: scroll;
+    height: calc(100vh - 210px);
+    padding: 0 10px;
+  }
+  .message {
+    margin: 10px 0;
+    color: $dark;
+  }
+}
+.message__user {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.message__text {
+  background-color: $gray;
+  padding: 10px 15px;
+  border-radius: 20px;
+  line-height: 1.4;
+  display: inline-block;
+  max-width: 70%;
+}
+.message__time {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.message.current {
+  text-align: right;
+  .message__text {
+    background-color: $blue;
+    color: $white;
+    text-align: left;
+  }
+}
+.typing {
+  color: $main;
+}

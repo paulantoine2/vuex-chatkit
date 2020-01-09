@@ -1,0 +1,23 @@
+.user-list {
+  padding: 16px;
+  .user {
+    background-color: $white;
+    border-radius: 4px;
+    @include shadow;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    .status {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      background-color: red;
+      &.online {
+        background-color: green;
+      }
+    }
+  }
+}

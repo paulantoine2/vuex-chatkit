@@ -1,0 +1,15 @@
+$lightA: #f2f2fd;
+$lightB: #fdfbfd;
+$white: #ffffff;
+$dark: #454d57;
+$main: #8f95a1;
+$blue: #2a8bf2;
+$gray: #eae8ed;
+
+@mixin shadow {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+@mixin shadowLarge {
+  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.05);
+}

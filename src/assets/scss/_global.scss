@@ -1,0 +1,68 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700&display=swap');
+
+body *, body {
+  margin: 0;
+  line-height: 1;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(143deg, rgba(242,242,253,1) 0%, rgba(253,251,253,1) 100%);
+}
+#app {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 26px;
+  color: $dark;
+  font-weight: 600;
+}
+h2 {
+  font-size: 20px;
+  color: $dark;
+  font-weight: 800;
+}
+hr {
+  height: 1px;
+  border: none;
+  background-color: $dark;
+  opacity: .2;
+  margin-top: 10px;
+}
+input[type="text"] {
+  background-color: $white;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  padding: 16px;
+  @include shadow;
+  width: 100%;
+}
+::placeholder {
+  color: $main;
+  opacity: .5;
+  font-weight: 500;
+}
+input[type="submit"], button[type="submit"] {
+  border: none;
+  border-radius: 50px;
+  @include shadow;
+  font-size: 16px;
+  padding: 6px 16px;
+  background: linear-gradient(27deg, rgba(42,139,242,1) 0%, rgba(124,184,247,1) 100%);
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  right: 16px;
+  bottom: 11px;
+  cursor: pointer;
+  &:disabled {
+    background: $gray;
+    cursor: default;
+  }
+}
